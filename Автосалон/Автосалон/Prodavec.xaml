@@ -1,0 +1,19 @@
+﻿<Window x:Class="Автосалон.Prodavec"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Автосалон"
+        mc:Ignorable="d"
+        Title="Prodavec" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="btn_ext_Prodavec" Content="Выход" HorizontalAlignment="Left" Margin="207,238,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill">
+                <ImageBrush.ImageSource>
+                    <BitmapImage UriSource="file:///C:/Users/Александр/Desktop/МПТ/Практика/МДК 02.01/УП 02.02 (Часть 2)/Автосалон/Автосалон/Автосалон/Image/3.jpg"/>
+                </ImageBrush.ImageSource>
+            </ImageBrush>
+        </Grid.Background>
+    </Grid>
+</Window>

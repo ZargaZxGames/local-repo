@@ -1,0 +1,48 @@
+﻿<Window x:Class="Автосалон.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Автосалон"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="300" Width="350" x:Name="Authorization"
+        WindowStartupLocation="CenterScreen" Icon="Icon.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" Orientation="Horizontal" Width="auto" Grid.Column="1">
+            <Label  x:Name="label" Content=" Логин"  Height="30" Width="50" />
+            <TextBox x:Name="textBLogin"  TextWrapping="Wrap" Text="" Height="22" Width="130"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" HorizontalAlignment="Center" Orientation="Horizontal" Width="auto" Grid.Column="1">
+            <Label x:Name="label1" Content="Пароль" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Width="50"/>
+            <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="22" Width="130" PasswordChar="*" Grid.Row="1" Grid.Column="1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" HorizontalAlignment="Center" Orientation="Vertical" Width="auto" Grid.Column="1">
+            <Button x:Name="btnReg" Content="Регистрация" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="130" Click="btnReg_Click" Background="#5aa3d8"  Grid.Row="2" Grid.Column="1"/>
+            <Button x:Name="btnOK" Content="Вход" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="130" Click="btnOK_Click" Background="#5aa3d8"  Grid.Row="2" Grid.Column="1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" HorizontalAlignment="Center" Orientation="Vertical" Width="auto" Height="25" Grid.Column="2">
+            <Button x:Name="btnExit" Content="Выход" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="50" Click="btnExit_Click" Background="#5aa3d8" Grid.Column="2"  Grid.Row="2"/>
+        </StackPanel>
+        <Image x:Name="AvtomabilIcon_png" Width="95" Height="95" Source="AvtomabilIcon.png" Stretch="Fill" Grid.Column="1"  Grid.RowSpan="2"/>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill">
+                <ImageBrush.ImageSource>
+                    <BitmapImage UriSource="file:///C:/Users/Александр/Desktop/МПТ/Практика/МДК 02.01/УП 02.02 (Часть 2)/Автосалон/Автосалон/Автосалон/Image/1.jpg"/>
+                </ImageBrush.ImageSource>
+            </ImageBrush>
+        </Grid.Background>
+    </Grid>
+</Window>
